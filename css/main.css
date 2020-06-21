@@ -87,8 +87,8 @@ body {
   display: flex;
   top: 0;
   right: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(-8px, 8px);
+          transform: translate(-8px, 8px);
   width: 30px;
   height: 30px;
   padding: 0;
@@ -100,23 +100,17 @@ body {
           align-items: center;
   -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
 .close-button:hover, .close-button:focus {
   outline: none;
-  -webkit-transform: translate(50%, -50%) scale(0.95);
-          transform: translate(50%, -50%) scale(0.95);
-}
-
-.close-button:active {
-  -webkit-transform: translate(50%, -50%) scale(0.9);
-          transform: translate(50%, -50%) scale(0.9);
+  -webkit-transform: translate(-8px, 8px);
+          transform: translate(-8px, 8px);
+  fill: #2196f3;
 }
 
 .suubmit-button {
