@@ -1,35 +1,37 @@
 /* Our Benefits */
-.section.benefits {
-  padding-bottom: 0px;
-}
-
-.benefits.container {
-  padding-bottom: 94px;
-  border-bottom: 1px solid $section-border-color;
-}
-
-.benefits.list {
-  display: flex;
-}
-
-.benefits-item {
-  width: 270px;
-
-  &:not(:first-child) {
-    margin-left: auto;
+.benefits {
+  &.section {
+    padding-bottom: 0px;
   }
 
-  &__icon {
+  &.container {
+    padding-bottom: 94px;
+    border-bottom: 1px solid $section-border-color;
+  }
+
+  &.list {
     display: flex;
+  }
+
+  &-item {
     width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
 
-    justify-content: center;
-    align-items: center;
+    &:not(:first-child) {
+      margin-left: auto;
+    }
 
-    background-color: $special-section-bg-color;
+    &__icon {
+      display: flex;
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
 
-    border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+
+      background-color: $special-section-bg-color;
+
+      border-radius: 4px;
+    }
   }
 }
